@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormNilaiMhs
+Partial Class FormNilaiMahasiswa2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -30,33 +30,34 @@ Partial Class FormNilaiMhs
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(13, 39)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(450, 156)
-        Me.DataGridView1.TabIndex = 14
+        Me.DataGridView1.Size = New System.Drawing.Size(479, 150)
+        Me.DataGridView1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 175)
+        Me.Button1.Location = New System.Drawing.Point(13, 195)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Tutup"
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'FormNilaiMhs
+        'FormNilaiMahasiswa2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(475, 270)
+        Me.ClientSize = New System.Drawing.Size(504, 263)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "FormNilaiMhs"
-        Me.Text = "FormNilaiMhs"
+        Me.Name = "FormNilaiMahasiswa2"
+        Me.Text = "FormNilaiMahasiswa2"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
+
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
 End Class

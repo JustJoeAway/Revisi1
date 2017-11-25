@@ -3,6 +3,7 @@ Module Module1
     Public CONN As SqlConnection
     Public CMD As SqlCommand
     Public DS As New DataSet
+    Public DS_2 As New DataSet
     Public DA As SqlDataAdapter
     Public RD As SqlDataReader
     Public LokasiData As String

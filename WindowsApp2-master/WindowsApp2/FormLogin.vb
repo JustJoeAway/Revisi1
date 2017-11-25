@@ -16,7 +16,7 @@ Public Class FormLogin
             If RD.Item("Type").ToString = "ADMIN" Then
                 FormMasterAdmin.ShowDialog()
             ElseIf RD.Item("Type").ToString = "MAHASISWA" Then
-                FormMahasiswa.ShowDialog()
+                FormMahasiswa2.ShowDialog()
             ElseIf RD.Item("Type").ToString = "DOSEN" Then
                 FormDosen.ShowDialog()
             Else

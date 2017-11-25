@@ -23,7 +23,7 @@ Partial Class FormMasterAdmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -32,9 +32,11 @@ Partial Class FormMasterAdmin
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbMatkul = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtMatkul = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,12 +50,12 @@ Partial Class FormMasterAdmin
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Type"
         '
-        'TextBox3
+        'txtPass
         '
-        Me.TextBox3.Location = New System.Drawing.Point(167, 45)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox3.TabIndex = 8
+        Me.txtPass.Location = New System.Drawing.Point(167, 45)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(135, 20)
+        Me.txtPass.TabIndex = 8
         '
         'Label4
         '
@@ -126,14 +128,14 @@ Partial Class FormMasterAdmin
         Me.TextBox4.Size = New System.Drawing.Size(356, 20)
         Me.TextBox4.TabIndex = 16
         '
-        'ComboBox1
+        'cmbMatkul
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"ADMIN", "MAHASISWA", "DOSEN"})
-        Me.ComboBox1.Location = New System.Drawing.Point(167, 71)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(135, 21)
-        Me.ComboBox1.TabIndex = 7
+        Me.cmbMatkul.FormattingEnabled = True
+        Me.cmbMatkul.Items.AddRange(New Object() {"ADMIN", "MAHASISWA", "DOSEN"})
+        Me.cmbMatkul.Location = New System.Drawing.Point(167, 71)
+        Me.cmbMatkul.Name = "cmbMatkul"
+        Me.cmbMatkul.Size = New System.Drawing.Size(135, 21)
+        Me.cmbMatkul.TabIndex = 7
         '
         'Label1
         '
@@ -145,18 +147,36 @@ Partial Class FormMasterAdmin
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "NIM / USERNAME"
         '
-        'TextBox1
+        'txtUser
         '
-        Me.TextBox1.Location = New System.Drawing.Point(167, 19)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.txtUser.Location = New System.Drawing.Point(167, 19)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(135, 20)
+        Me.txtUser.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(43, 105)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Matkul"
+        '
+        'txtMatkul
+        '
+        Me.txtMatkul.Location = New System.Drawing.Point(167, 102)
+        Me.txtMatkul.Name = "txtMatkul"
+        Me.txtMatkul.Size = New System.Drawing.Size(135, 20)
+        Me.txtMatkul.TabIndex = 19
         '
         'FormMasterAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 396)
+        Me.Controls.Add(Me.txtMatkul)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.DataGridView1)
@@ -165,10 +185,10 @@ Partial Class FormMasterAdmin
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.txtPass)
+        Me.Controls.Add(Me.cmbMatkul)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormMasterAdmin"
         Me.Text = "FormMasterAdmin"
@@ -178,7 +198,7 @@ Partial Class FormMasterAdmin
 
     End Sub
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtPass As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
@@ -187,7 +207,9 @@ Partial Class FormMasterAdmin
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbMatkul As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtUser As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtMatkul As TextBox
 End Class

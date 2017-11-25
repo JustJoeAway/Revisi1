@@ -73,13 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormDosen.Designer.vb">
       <DependentUpon>FormDosen.vb</DependentUpon>
     </Compile>
@@ -92,28 +85,40 @@
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUpdateDose.Designer.vb">
-      <DependentUpon>FormUpdateDose.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormUpdateDose.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormMahasiswa.Designer.vb">
       <DependentUpon>FormMahasiswa.vb</DependentUpon>
     </Compile>
     <Compile Include="FormMahasiswa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormNilaiMahasiswa2.Designer.vb">
+      <DependentUpon>FormNilaiMahasiswa2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormNilaiMahasiswa2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfileMahasiswa.Designer.vb">
+      <DependentUpon>FormProfileMahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfileMahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateMahasiswa.Designer.vb">
+      <DependentUpon>FormUpdateMahasiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateMahasiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateDose.Designer.vb">
+      <DependentUpon>FormUpdateDose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateDose.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMasterAdmin.Designer.vb">
       <DependentUpon>FormMasterAdmin.vb</DependentUpon>
     </Compile>
     <Compile Include="FormMasterAdmin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNilaiMhs.Designer.vb">
-      <DependentUpon>FormNilaiMhs.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormNilaiMhs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormProfileDosen.Designer.vb">
@@ -140,26 +145,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDosen.resx">
       <DependentUpon>FormDosen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUpdateDose.resx">
-      <DependentUpon>FormUpdateDose.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormMahasiswa.resx">
       <DependentUpon>FormMahasiswa.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormNilaiMahasiswa2.resx">
+      <DependentUpon>FormNilaiMahasiswa2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfileMahasiswa.resx">
+      <DependentUpon>FormProfileMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateMahasiswa.resx">
+      <DependentUpon>FormUpdateMahasiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateDose.resx">
+      <DependentUpon>FormUpdateDose.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMasterAdmin.resx">
       <DependentUpon>FormMasterAdmin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNilaiMhs.resx">
-      <DependentUpon>FormNilaiMhs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProfileDosen.resx">
       <DependentUpon>FormProfileDosen.vb</DependentUpon>
